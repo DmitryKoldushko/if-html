@@ -1,15 +1,15 @@
-@import url(../lesson-5/css-lesson-5/fonts-css.css);
+@import url(../styles/fonts-css.css);
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "RobotoRegular", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
+/*блок advantages*/
 .advantages {
-  /*width: 1440px;*/
-  /*height: 569px;*/
+  width: 1440px;
   background: #ffffff;
   padding: 120px 16px;
   margin: 0 auto;
@@ -35,10 +35,12 @@ h2::after {
   margin: 20px 0 0 103px;
 }
 
+.wrapper {
+  display: flex;
+}
+
 .block {
-  display: inline-block;
   width: 25%;
-  float: left;
 }
 
 .item-icon {
@@ -56,4 +58,57 @@ h2::after {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+}
+
+/*блок footer*/
+.footer {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #10367c;
+  color: #ffffff;
+}
+
+.footer-wrapper {
+  padding: 120px 270px 120px 105px;
+}
+
+.footer-item {
+  display: flex;
+}
+
+.list {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.item-flex {
+  margin: 20px 0 0 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: justify;
+}
+
+.item-flex-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: justify;
+}
+
+.title {
+  margin-top: 65px;
+}
+
+.title-item {
+  font-size: 14px;
+  line-height: 16px;
 }
