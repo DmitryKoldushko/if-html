@@ -1,214 +1,74 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="IT school from Belarus" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Dmitry" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 3</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>TripHouse</title>
   </head>
   <body>
-    <img
-      src="https://res.cloudinary.com/intellectfox/image/upload/v1643025733/content/zhenya_silyukov_epdeg7.jpg"
-      alt="zhenya"
-    />
-    <ol>
-      <li>
-        Знакомство с Web
-        <ul>
-          <li>Краткая история Web и что такое интернет.</li>
-          <li>Как устроен браузер и как он получает страницы по сети.</li>
-          <li>Что такое Git?</li>
-          <li>Создание первого репозитория.</li>
-          <li>О файле .gitignore.</li>
-        </ul>
-      </li>
-      <li>
-        HTML-вёрстка — первые шаги
-        <ul>
-          <li>Настройка рабочей среды.</li>
-          <li>Краткая история HTML.</li>
-          <li>Какие бывают теги и что такое атрибут.</li>
-          <li>Теги для работы с текстом.</li>
-          <li>Создание собственной страницы.</li>
-        </ul>
-      </li>
-      <li>
-        Погружение в HTML-разметку
-        <ul>
-          <li>Мета-теги.</li>
-          <li>Мнемоники.</li>
-          <li>Тег для работы с изображениями.</li>
-          <li>Теги для работы с таблицами.</li>
-          <li>Теги для работы с форматами.</li>
-          <li>Div-блоки.</li>
-        </ul>
-      </li>
-    </ol>
-    <table border="1" width="50%">
-      <caption>
-        Table
-      </caption>
-      <thead>
-        <tr>
-          <th>Tag</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&#60;table&#62;</td>
-          <td>Defines a table</td>
-        </tr>
-        <tr>
-          <td>&#60;tr&#62;</td>
-          <td>Defines a row in table</td>
-        </tr>
-        <tr>
-          <td>&#60;th&#62;</td>
-          <td rowspan="2">Defines a "header cell" / "cell" in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;td&#62;</td>
-        </tr>
-        <tr>
-          <td colspan="2">Rarely used</td>
-        </tr>
-        <tr>
-          <td>&#60;caption&#62;</td>
-          <td>Defines a table caption</td>
-        </tr>
-        <tr>
-          <td>&#60;thead&#62;</td>
-          <td>Groups the header content in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;tbody&#62;</td>
-          <td>Groups the body content in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;tfoot&#62;</td>
-          <td>Groups the footer content in a table</td>
-        </tr>
-      </tbody>
-    </table>
-    <form action="/" method="GET">
-      <fieldset>
-        <legend>My first form</legend>
-        <div>
-          <label for="name">Name</label><br />
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Name"
-            required
-          />
+    <div class="advantages">
+      <h2 class="item-title">What do we offer</h2>
+      <div class="wrapper">
+        <div class="block">
+          <div class="item-icon">
+            <img src="media/headphones.png" alt="headphones" />
+          </div>
+          <p class="item-title-block">Support 24/7</p>
         </div>
-        <div>
-          <label for="email">Email</label><br />
-          <input id="email" name="email" type="email" required />
+        <div class="block">
+          <div class="item-icon">
+            <img src="media/message.png" alt="message" />
+          </div>
+          <p class="item-title-block">Communicate directly</p>
         </div>
-        <div>
-          <label for="password">Password</label><br />
-          <input id="password" name="password" type="text" required />
+        <div class="block">
+          <div class="item-icon">
+            <img src="media/pc.png" alt="pc" />
+          </div>
+          <p class="item-title-block">Book online</p>
         </div>
-        <div>
-          <label for="level">Your programming level</label><br />
-          <input id="level" name="level" type="range" min="1" max="10" />
+        <div class="block">
+          <div class="item-icon">
+            <img src="media/like.png" alt="like" />
+          </div>
+          <p class="item-title-block">Real guest reviews</p>
         </div>
-        <p>
-          What does HTML stand for?<br />
-          <br />
-          <input
-            id="hyperlinks-and-text-markup-language"
-            name="language"
-            type="checkbox"
-            value="1"
-          />
-          <label for="hyperlinks-and-text-markup-language"
-            >Hyperlinks and Text Markup Language</label
-          ><br />
-          <input
-            id="home-tool-markup-language"
-            name="language"
-            type="checkbox"
-            value="2"
-          />
-          <label for="home-tool-markup-language"
-            >Home Tool Markup Language</label
-          ><br />
-          <input
-            id="hyper-text-markup-language"
-            name="language"
-            type="checkbox"
-            value="3"
-          />
-          <label for="hyper-text-markup-language"
-            >Hyper Text Markup Language</label
-          >
-        </p>
-
-        <div>
-          What does HTTP stand for?<br />
-          <br />
-          <input
-            id="hyper-text-translate-protocol"
-            name="protocol"
-            type="radio"
-            value="1"
-          />
-          <label for="hyper-text-translate-protocol"
-            >Hyper Text Translate Protocol</label
-          ><br />
-          <input
-            id="hyper-text-transmission-protocol"
-            name="protocol"
-            type="radio"
-            value="2"
-          />
-          <label for="hyper-text-transmission-protocol"
-            >Hyper Text Transmission Protocol</label
-          ><br />
-          <input
-            id="hyper-text-transfer-protocol"
-            name="protocol"
-            type="radio"
-            value="3"
-          />
-          <label for="hyper-text-transfer-protocol"
-            >Hyper Text Transfer Protocol</label
-          >
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-item">
+          <div class="list">
+            <ul class="list-item">
+              <li class="item-flex-title">About</li>
+              <li class="item-flex">How Triphouse works</li>
+              <li class="item-flex">Careers</li>
+              <li class="item-flex">Privacy</li>
+              <li class="item-flex">Terms</li>
+            </ul>
+            <ul class="list-item">
+              <li class="item-flex-title">Property types</li>
+              <li class="item-flex">Guest houses</li>
+              <li class="item-flex">Hotels</li>
+              <li class="item-flex">Apartments</li>
+              <li class="item-flex">Villas</li>
+              <li class="item-flex">Holiday homes</li>
+              <li class="item-flex">Hostels</li>
+            </ul>
+            <ul class="list-item">
+              <li class="item-flex-title">Support</li>
+              <li class="item-flex">Contact Customer Service</li>
+              <li class="item-flex">FAQ</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <label for="comment">Comment</label><br />
-          <textarea
-            id="comment"
-            name="comment"
-            maxlength="500"
-            placeholder="Comment"
-          ></textarea>
+        <div class="title">
+          <p class="title-item">
+            &#169; 2020 Triphouse, Inc. All rights reserved
+          </p>
         </div>
-        <div>
-          <label for="what-does-HTML-stand-for?"
-            >What does HTML stand for?</label
-          ><br />
-          <select
-            name="what-does-HTML-stand-for?"
-            id="what-does-HTML-stand-for?"
-          >
-            <option disabled selected>Your answer</option>
-            <option value="1">Hyperlinks and Text Markup Language</option>
-            <option value="2">Home Tool Markup Language</option>
-            <option value="3">Hyper Text Markup Language</option>
-          </select>
-        </div>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </fieldset>
-    </form>
-    <hr />
+      </div>
+    </div>
   </body>
 </html>
