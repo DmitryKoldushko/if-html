@@ -9,7 +9,7 @@
 
 /*блок advantages*/
 .advantages {
-  width: 1440px;
+  /*width: 1440px;*/
   background: #ffffff;
   padding: 120px 16px;
   margin: 0 auto;
@@ -62,7 +62,7 @@ h2::after {
 
 /*блок footer*/
 .footer {
-  width: 1440px;
+  /*width: 1440px;*/
   margin: 0 auto;
   background-color: #10367c;
   color: #ffffff;
