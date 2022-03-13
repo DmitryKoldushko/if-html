@@ -120,12 +120,10 @@ h2::after {
   background-position: center;
   background-size: 100%;
   min-height: 1000px;
-  /*width: 1900px;*/
   padding: 50px 105px 120px 105px;
 }
 
 .header {
-  /*height: 46px;*/
   display: flex;
   justify-content: space-between;
   color: #ffffff;
