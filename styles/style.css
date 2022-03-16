@@ -1,4 +1,4 @@
-@import url(../styles/fonts-css.css);
+@import url("../styles/fonts-css.css");
 
 * {
   box-sizing: border-box;
@@ -111,4 +111,254 @@ h2::after {
 .title-item {
   font-size: 14px;
   line-height: 16px;
+}
+
+/*блок block_site*/
+.header {
+  background-image: url("../media/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  min-height: 1000px;
+  padding: 50px 105px 120px 105px;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.header_logo {
+  display: flex;
+}
+
+.logo {
+  margin: auto 0;
+}
+
+.stays {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.attractions {
+  color: #ffffff;
+  text-decoration: solid;
+  font-weight: 400;
+}
+
+.header_right_content {
+  display: flex;
+  align-items: center;
+}
+
+.header_links {
+  display: flex;
+  margin-right: 48px;
+}
+
+.stays {
+  position: relative;
+  margin: auto 24px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.stays::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #f5bd41;
+  margin: 12px auto 0;
+  transition: width 0.3s ease-out;
+}
+
+.stays:hover:after,
+.stays:focus:after {
+  width: 100%;
+}
+
+.attractions {
+  position: relative;
+  text-decoration: none;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.attractions::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #f5bd41;
+  margin: 12px auto 0;
+  transition: width 0.3s ease-out;
+}
+
+.attractions:hover:after,
+.attractions:focus:after {
+  width: 100%;
+}
+
+.header_icons {
+  display: flex;
+  align-items: center;
+}
+
+.night-icon-moon {
+  fill: #ffffff;
+  margin-right: 24px;
+}
+
+.night-icon-moon:hover,
+.night-icon-moon:focus {
+  fill: #f5bd41;
+}
+
+.profile_circle {
+  fill: #ffffff;
+}
+
+.profile_circle:hover,
+.profile_circle:focus {
+  fill: #f5bd41;
+}
+
+.name_content {
+  margin-top: 200px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 59px;
+}
+
+.l-page {
+  display: flex;
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+.label_page {
+  display: flex;
+  margin-right: 417px;
+  margin-left: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.i-page {
+  display: flex;
+  margin-top: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.in_page {
+  display: flex;
+  background-color: #ffffff;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+  width: 38%;
+  height: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: start;
+  color: #383838;
+  padding-left: 24px;
+}
+
+.in_page:focus {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  outline: none;
+}
+
+.in_page_date {
+  display: flex;
+  background-color: #ffffff;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+  width: 21%;
+  height: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #383838;
+}
+
+.in_page_date:focus {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  outline: none;
+}
+
+.in_page_hotel {
+  display: flex;
+  background-color: #ffffff;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+  width: 25%;
+  height: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #383838;
+}
+
+.in_page_hotel:focus {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3077c6;
+  color: #ffffff;
+  border: 3px solid #3077c6;
+  border-radius: 8px;
+  width: 16%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.group_img {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.sprite {
+  background-image: url("../media/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite_1 {
+  margin-right: 16px;
+  width: 135px;
+  height: 40px;
+  background-position: -16px -16px;
+}
+
+.sprite_2 {
+  width: 120px;
+  height: 40px;
+  background-position: -183px -16px;
 }
